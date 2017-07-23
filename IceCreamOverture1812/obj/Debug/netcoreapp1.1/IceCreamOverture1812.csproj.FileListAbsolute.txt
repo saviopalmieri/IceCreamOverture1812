@@ -1,0 +1,10 @@
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/bin/Debug/netcoreapp1.1/IceCreamOverture1812.deps.json
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/bin/Debug/netcoreapp1.1/IceCreamOverture1812.runtimeconfig.json
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/bin/Debug/netcoreapp1.1/IceCreamOverture1812.runtimeconfig.dev.json
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/bin/Debug/netcoreapp1.1/IceCreamOverture1812.dll
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/bin/Debug/netcoreapp1.1/IceCreamOverture1812.pdb
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/obj/Debug/netcoreapp1.1/IceCreamOverture1812.csprojResolveAssemblyReference.cache
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/obj/Debug/netcoreapp1.1/IceCreamOverture1812.csproj.CoreCompileInputs.cache
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/obj/Debug/netcoreapp1.1/IceCreamOverture1812.AssemblyInfo.cs
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/obj/Debug/netcoreapp1.1/IceCreamOverture1812.dll
+/Users/saviopalmieri/Projects/IceCreamOverture1812/IceCreamOverture1812/obj/Debug/netcoreapp1.1/IceCreamOverture1812.pdb

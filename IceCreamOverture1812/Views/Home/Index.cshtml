@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="~/lib/howler.js/src/howler.core.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+<script type="text/javascript">
+
+    var countVengeance = 0;
+	
+   var sound = new Howl({
+	  src: ['sound.mp3'],
+		autoplay: true,
+	    loop: true,
+	    onend: function() {
+		    console.log('Finished!');
+		  }
+	});
+
+	sound.play();
+
+    setInterval(function(){ 
+
+	    if(countVengeance < 200)
+	    {
+	        $.ajax({
+	            url: '/Home/RegistrateUser?count=' + countVengeance,
+	            success: function(data) {
+	                 if(data == "ok")
+	                {
+	                    countVengeance += 1;
+
+	                    $("#vengeanceNo").html(countVengeance);
+	                }
+	            }
+	        });
+	    }
+        else
+	    {
+	        $.ajax({
+                url: '/Home/FatalityAction',
+                success: function(data) {
+                     if(data == "ok")
+                    {
+                        $("#divFatality").removeClass("hidden");
+                    }
+                }
+            });
+	    }
+	
+	}, 15000);
+	
+</script>
+
+
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 text-center">
+        <img src="~/images/v_for_vendetta_mask.png" alt="" class="img-responsive img-thumbnail" />
+	</div>
+    <div class="col-lg-3"></div>
+
+</div>
+<div class="row" style="margin-top:20px;">
+	
+	<div class="col-lg-3"></div>
+    <div class="col-lg-6 text-center">
+        <div class="well"><i>"Le mille indegnità della natura scivolano su di lui, disdegnando la fortuna e brandendo il ferro sanguinante di fumosa strage"</i></div>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 text-center">
+        <span class="btn btn-primary" type="button" style="padding:20px; ">
+		  <h3 style="margin:0px;">Vengeance state - <span class="badge" id="vengeanceNo" style="font-size:18px">0</span></h3>
+		</span>
+    </div>
+    <div class="col-lg-3"></div>
+	   
+</div>
+
+<div class="row hidden" id="divFatality">
+
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6 text-center">
+        <div class="panel panel-info">COCO is DEAD!</div>
+    </div>
+    <div class="col-lg-3"></div>
+       
+</div>
